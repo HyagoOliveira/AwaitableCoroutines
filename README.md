@@ -7,10 +7,11 @@
 
 ## Summary
 
-Currently, Unity **does not support** a proper way to run **async/await code**. 
+Currently, Unity **does not support** a proper way to run **async/await** code without using **Coroutines**. 
 
-This will change in the next [Unity .NET big update](https://blog.unity.com/technology/unity-and-net-whats-next#:~:text=Editor%20during%202024.-,Modernizing%20the%20Unity%20runtime,-.NET%20Standard%202.1) 
-where asynchronous programing will improve significantly. Until there, **this package provides a simple way to execute asynchronous code**. 
+This will change in the next [big update for the Unity .NET](https://blog.unity.com/technology/unity-and-net-whats-next#:~:text=Editor%20during%202024.-,Modernizing%20the%20Unity%20runtime,-.NET%20Standard%202.1) 
+where asynchronous programing will improve significantly. <br/>
+Until there, **this package provides a simple way to execute asynchronous code**. 
 Use it until Unity provides the official solution.
 
 ## How To Use
