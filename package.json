@@ -1,22 +1,22 @@
 {
-  "name": "com.actioncode.[packagename]",
-  "displayName": "ActionCode-[PackageName]",
+  "name": "com.actioncode.awaitable-coroutines",
+  "displayName": "ActionCode-Awaitable Coroutines",
   "version": "0.1.0",
   "unity": "2019.3",
-  "description": "This package contains [...].",
+  "description": "Temporary solution to easily run Async code in Unity.",
   "keywords": [
-    "",
-    ""
+    "Async",
+    "Runner"
   ],
   "dependencies": {},
   "license": "MIT",
-  "homepage": "https://github.com/HyagoOliveira/[PACKAGE]#readme",
+  "homepage": "https://github.com/HyagoOliveira/AwaitableCoroutines#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HyagoOliveira/[PACKAGE].git"
+    "url": "https://github.com/HyagoOliveira/AwaitableCoroutines.git"
   },
-  "documentationUrl": "https://github.com/HyagoOliveira/[PACKAGE]#readme",
-  "changelogUrl": "https://github.com/HyagoOliveira/[PACKAGE]/CHANGELOG.md",
+  "documentationUrl": "https://github.com/HyagoOliveira/AwaitableCoroutines#readme",
+  "changelogUrl": "https://github.com/HyagoOliveira/AwaitableCoroutines/CHANGELOG.md",
   "author": {
     "name": "Hyago Oliveira",
     "email": "hyagogow@gmail.com"
