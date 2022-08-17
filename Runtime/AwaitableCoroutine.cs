@@ -26,6 +26,12 @@ namespace ActionCode.AwaitableCoroutines
         /// <returns>A task that represents the routine queued to execute in the thread pool.</returns>
         public static async Task Run(IEnumerator routine, CancellationToken cancellationToken = default)
         {
+            if (!Application.isPlaying)
+            {
+                Debug.LogError("Cannot run routine out of Play Mode!");
+                return;
+            }
+
             var task = new TaskCoroutine(routine);
             task.OnComplete += HandleTaskCompleted;
 
