@@ -1,13 +1,13 @@
 # Awaitable Coroutines
 
-* Temporary solution to easily run Coroutines asynchronously.
+* Temporary solution to easily run Coroutines as async code.
 * Unity minimum version: **2019.3**
 * Current version: **0.1.0**
 * License: **MIT**
 
 ## Summary
 
-Currently, Unity **does not support** a proper way to run Coroutines asynchronously.
+Currently, Unity **does not support** a proper way to run Coroutines using **async/await** code.
 
 This will change in the next [big update for the Unity .NET environment](https://blog.unity.com/technology/unity-and-net-whats-next#:~:text=Editor%20during%202024.-,Modernizing%20the%20Unity%20runtime,-.NET%20Standard%202.1) 
 where asynchronous programing will be improved significantly. <br/>
@@ -56,7 +56,7 @@ This GameObject is _Lazy_ created, i.e. it'll be only created when used for the 
 
 ![Awaitable Coroutine Behaviour in Inspector](/Docs~/AwaitableCoroutineBehaviour-Inspector.png "AwaitableCoroutineBehaviour in Inspector").
 
-> For safety, this GameObject cannot be edited using the Inspector.
+> For safety, this GameObject cannot be edited using the Inspector. **Do not delete this GameObject**.
 
 ## Installation
 
