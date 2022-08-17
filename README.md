@@ -1,17 +1,17 @@
 # Awaitable Coroutines
 
-* Temporary solution to easily run Async code in Unity
+* Temporary solution to easily run Coroutines asynchronously.
 * Unity minimum version: **2019.3**
 * Current version: **0.1.0**
 * License: **MIT**
 
 ## Summary
 
-Currently, Unity **does not support** a proper way to run **async/await** code without using **Coroutines**. 
+Currently, Unity **does not support** a proper way to run Coroutines asynchronously.
 
-This will change in the next [big update for the Unity .NET](https://blog.unity.com/technology/unity-and-net-whats-next#:~:text=Editor%20during%202024.-,Modernizing%20the%20Unity%20runtime,-.NET%20Standard%202.1) 
-where asynchronous programing will improve significantly. <br/>
-Until there, **this package provides a simple way to execute asynchronous code**. 
+This will change in the next [big update for the Unity .NET environment](https://blog.unity.com/technology/unity-and-net-whats-next#:~:text=Editor%20during%202024.-,Modernizing%20the%20Unity%20runtime,-.NET%20Standard%202.1) 
+where asynchronous programing will be improved significantly. <br/>
+Until there, **this package provides a simple way to execute Coroutines asynchronous** and improve your code legibility. 
 Use it until Unity provides the official solution.
 
 ## How To Use
