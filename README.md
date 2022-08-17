@@ -16,6 +16,48 @@ Use it until Unity provides the official solution.
 
 ## How To Use
 
+Simply import the namespace `ActionCode.AwaitableCoroutines` and use the asynchronous `AwaitableCoroutine.Run()` function to run any `Coroutine` in your code.
+
+```csharp
+using UnityEngine;
+using System.Collections;
+using ActionCode.AwaitableCoroutines;
+
+public sealed class Test : MonoBehaviour
+{
+    public async void StartCount()
+    {
+        await AwaitableCoroutine.Run(CountUntil(5));
+        print("Counting until five has finished!");
+
+        await AwaitableCoroutine.Run(CountUntil(10));
+        print("Counting until ten has finished!");
+    }
+
+    IEnumerator CountUntil(int seconds)
+    {
+        var waitOneSecond = new WaitForSeconds(1);
+        for (int i = 1; i <= seconds; i++)
+        {
+            print("Counting: " + i);
+            yield return waitOneSecond;
+        }
+    }
+}
+```
+
+> **Note**: your class does not need to be a `MonoBehaviour`.
+
+## How It Works
+
+The static `AwaitableCoroutine` class uses a GameObject with the internal [AwaitableCoroutineBehaviour](/Runtime/AwaitableCoroutineBehaviour.cs) script to wrap and execute asynchronous tasks.
+
+This GameObject is _Lazy_ created, i.e. it'll be only created when used for the first time and it'll be sent to the special scene **DontDestroyOnLoad**. After that it'll be cached.
+
+![Awaitable Coroutine Behaviour in Inspector](/Docs~/AwaitableCoroutineBehaviour-Inspector.png "AwaitableCoroutineBehaviour in Inspector").
+
+> For safety, this GameObject cannot be edited using the Inspector.
+
 ## Installation
 
 ### Using the Package Registry Server
