@@ -10,7 +10,8 @@
 Currently, Unity **does not support** a proper way to run Coroutines using **async/await** code.
 
 This will change in the next [big update for the Unity .NET environment](https://blog.unity.com/technology/unity-and-net-whats-next#:~:text=Editor%20during%202024.-,Modernizing%20the%20Unity%20runtime,-.NET%20Standard%202.1) 
-where asynchronous programing will be improved significantly. <br/>
+where asynchronous programing will be improved significantly.
+
 Until there, **this package provides a simple way to execute Coroutines asynchronous** and improve your code legibility. 
 Use it until Unity provides the official solution.
 
@@ -25,7 +26,7 @@ using ActionCode.AwaitableCoroutines;
 
 public sealed class Test : MonoBehaviour
 {
-    public async void StartCount()
+    public async void Start()
     {
         await AwaitableCoroutine.Run(CountUntil(5));
         print("Counting until five has finished!");
@@ -52,7 +53,7 @@ public sealed class Test : MonoBehaviour
 
 The static `AwaitableCoroutine` class uses a GameObject with the internal [AwaitableCoroutineBehaviour](/Runtime/AwaitableCoroutineBehaviour.cs) script to wrap and execute asynchronous tasks.
 
-This GameObject is _Lazy_ created, i.e. it'll be only created when used for the first time and it'll be sent to the special scene **DontDestroyOnLoad**. After that it'll be cached.
+This GameObject is *lazy* created, i.e. it'll be only created when used for the first time and it'll be sent to the special scene **DontDestroyOnLoad**. It's cached after that.
 
 ![Awaitable Coroutine Behaviour in Inspector](/Docs~/AwaitableCoroutineBehaviour-Inspector.png "AwaitableCoroutineBehaviour in Inspector").
 
