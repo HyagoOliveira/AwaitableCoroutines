@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [1.0.0] - 2022-01-01
+## [1.0.0] - 2022-08-17
 ### Added
 - AwaitableCoroutine
 - AwaitableCoroutineBehaviour
