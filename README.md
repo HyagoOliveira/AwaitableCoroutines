@@ -2,7 +2,7 @@
 
 * Temporary solution to easily run Coroutines as async code.
 * Unity minimum version: **2019.3**
-* Current version: **0.1.0**
+* Current version: **1.0.0**
 * License: **MIT**
 
 ## Summary
@@ -53,7 +53,7 @@ public sealed class Test : MonoBehaviour
 
 The static `AwaitableCoroutine` class uses a GameObject with the internal [AwaitableCoroutineBehaviour](/Runtime/AwaitableCoroutineBehaviour.cs) script to wrap and execute asynchronous tasks.
 
-This GameObject is *lazy* created, i.e. it'll be only created when used for the first time and it'll be sent to the special scene **DontDestroyOnLoad**. It's cached after that.
+This GameObject is *lazy created*, i.e. it'll be only created when used for the first time and it'll be sent to the special scene **DontDestroyOnLoad**. It's cached after that.
 
 ![Awaitable Coroutine Behaviour in Inspector](/Docs~/AwaitableCoroutineBehaviour-Inspector.png "AwaitableCoroutineBehaviour in Inspector").
 
